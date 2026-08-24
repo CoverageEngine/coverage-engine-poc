@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """Train the success-only Coverage baseline (future-state prediction error).
 
-See DEV_PLAN.md M6/M7.
+See docs/DEV_PLAN.md M6/M7.
 """
 
 import argparse

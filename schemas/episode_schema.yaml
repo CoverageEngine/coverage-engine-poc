@@ -1,5 +1,5 @@
 # Episode feature schema for the Coverage Engine rollout dataset.
-# Dataset format: LeRobotDataset. See DEV_PLAN.md Section 3 for rationale.
+# Dataset format: LeRobotDataset. See docs/DEV_PLAN.md Section 3 for rationale.
 #
 # schema_version: project-level version for the fields below.
 # LeRobot's own dataset version lives in meta/info.json (codebase_version).

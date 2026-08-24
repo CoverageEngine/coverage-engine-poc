@@ -1,7 +1,7 @@
 [project]
 name = "coverage-engine"
 version = "0.1.0"
-description = "Coverage Engine - NVIDIA Robotics Stack POC. See DEV_PLAN.md."
+description = "Coverage Engine - NVIDIA Robotics Stack POC. See docs/DEV_PLAN.md."
 requires-python = ">=3.10"
 dependencies = [
     "torch>=2.2",
@@ -23,7 +23,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 # No installable package yet: coverage/ and robotics/ hold empty
-# milestone subfolders (see DEV_PLAN.md), not importable code.
+# milestone subfolders (see docs/DEV_PLAN.md), not importable code.
 # This file exists to pin dependencies and tool config.
 [tool.setuptools]
 packages = []

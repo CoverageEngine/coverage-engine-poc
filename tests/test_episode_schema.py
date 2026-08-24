@@ -1,4 +1,4 @@
-"""Smoke test: the episode schema file exists and parses. See DEV_PLAN.md M3."""
+"""Smoke test: the episode schema file exists and parses. See docs/DEV_PLAN.md M3."""
 
 from pathlib import Path
 
