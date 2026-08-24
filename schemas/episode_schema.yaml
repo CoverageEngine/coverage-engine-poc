@@ -1,0 +1,56 @@
+# Episode feature schema for the Coverage Engine rollout dataset.
+# Dataset format: LeRobotDataset. See DEV_PLAN.md Section 3 for rationale.
+#
+# schema_version: project-level version for the fields below.
+# LeRobot's own dataset version lives in meta/info.json (codebase_version).
+schema_version: 0
+
+features:
+  observation.robot.q:
+    meaning: joint positions
+  observation.robot.dq:
+    meaning: joint velocities
+  observation.eef.pose:
+    meaning: end-effector position + quaternion
+  observation.gripper:
+    meaning: gripper command/state
+  observation.object.pose:
+    meaning: pose of manipulated object
+  observation.object.twist:
+    meaning: linear + angular velocity
+  observation.target.pose:
+    meaning: destination pose
+  action:
+    meaning: exact VLA/policy action passed to controller
+  observation.contact.net_force:
+    meaning: net contact force vector / magnitude
+  observation.contact.filtered_force:
+    meaning: force against manipulated object when filtering is configured
+  observation.contact.active:
+    meaning: boolean using a documented threshold
+  observation.images.camera_front:
+    meaning: front camera video, recorded every episode
+
+# Custom episode-level metadata (meta/episodes.jsonl fields, or the
+# episode_manifest.parquet fallback — confirm which one at M0/M3).
+episode_metadata:
+  - episode_id
+  - seed
+  - timestamp
+  - git_commit
+  - container_tag
+  - arena_environment
+  - embodiment
+  - groot_model_id
+  - policy_config
+  - language_instruction
+  - object_asset
+  - destination_asset
+  - initial_object_pose
+  - target_pose
+  - randomized_physics_params
+  - control_frequency_hz
+  - success
+  - termination_reason
+  - num_steps
+  - failure_time

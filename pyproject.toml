@@ -1,0 +1,38 @@
+[project]
+name = "coverage-engine"
+version = "0.1.0"
+description = "Coverage Engine - NVIDIA Robotics Stack POC. See DEV_PLAN.md."
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.2",
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "scikit-learn>=1.4",
+    "matplotlib>=3.8",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.4",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+# No installable package yet: coverage/ and robotics/ hold empty
+# milestone subfolders (see DEV_PLAN.md), not importable code.
+# This file exists to pin dependencies and tool config.
+[tool.setuptools]
+packages = []
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
