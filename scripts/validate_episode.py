@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Validate one or more episodes against schemas/episode_schema.yaml. See DEV_PLAN.md M3."""
+"""Validate one or more episodes against schemas/episode_schema.yaml. See docs/DEV_PLAN.md M3."""
 
 import argparse
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Report episode count, outcomes, lengths, and missing fields. See DEV_PLAN.md M3/M5."""
+"""Report episode count, outcomes, lengths, and missing fields. See docs/DEV_PLAN.md M3/M5."""
 
 import argparse
 

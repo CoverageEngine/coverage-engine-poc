@@ -2,7 +2,7 @@
 
 Reproducible pipeline: run a VLA-controlled pick-and-place task in NVIDIA Isaac, record rollouts as a LeRobotDataset, train a success-only Coverage model offline, and measure early-warning behavior before failures.
 
-See [`DEV_PLAN.md`](./DEV_PLAN.md) for the full execution plan, milestones, and data contract.
+See [`DEV_PLAN.md`](./docs/DEV_PLAN.md) for the full execution plan, milestones, and data contract.
 
 ## Repository layout
 
@@ -20,4 +20,4 @@ tests/         Unit and schema tests
 
 ## Status
 
-M0 not started. See `DEV_PLAN.md` Section 4 for milestone order and exit criteria.
+M0 not started. See `docs/DEV_PLAN.md` Section 4 for milestone order and exit criteria.
