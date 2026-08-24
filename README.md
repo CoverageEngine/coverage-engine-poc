@@ -13,11 +13,15 @@ coverage/      Environment-B code: ingest, features, models, calibration, evalua
 schemas/       Dataset schema definitions (episode_schema.yaml)
 scripts/       CLI entry points (validate, summarize, train, evaluate)
 data/          LeRobotDataset rollout data (not committed — see .gitignore)
-docs/          Environment manifests, reports
+docs/          Environment manifests, runbooks, reports
 submodules/    IsaacLab-Arena (unmodified)
 tests/         Unit and schema tests
 ```
 
 ## Status
 
-M0 not started. See `docs/DEV_PLAN.md` Section 4 for milestone order and exit criteria.
+M0 in progress: repo-side scaffolding (persistent-dir, Arena-pin, and
+environment-recording scripts) is in place; see
+`docs/runbooks/m0_setup.md`. GPU host provisioning and Arena container
+launch are still outstanding. See `docs/DEV_PLAN.md` Section 4 for
+milestone order and exit criteria.
